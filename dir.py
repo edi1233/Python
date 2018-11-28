@@ -27,7 +27,7 @@ while 1:
         mailserver = smtplib.SMTP('smtp.office365.com',587)
         mailserver.ehlo()
         mailserver.starttls()
-        mailserver.login('edia@gvcplc.com', 'Leon21013@')
+        mailserver.login('user', 'password')
         mailserver.sendmail(me, you, msg.as_string())
         mailserver.quit()
     time.sleep (10)
